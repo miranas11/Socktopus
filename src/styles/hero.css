@@ -1,0 +1,155 @@
+.hero {
+    position: relative;
+}
+
+.hero__image {
+    width: 100%;
+    padding: 0;
+}
+
+.hero__content {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5em;
+    font-size: var(--size-xs);
+}
+
+.hero__content > h4 {
+    font-size: var(--size-xxs);
+}
+
+.hero__content > h2 {
+    font-size: var(--size-xs);
+}
+
+.hero__content > h1 {
+    color: var(--clr-indigo);
+    font-size: var(--size-sm);
+}
+.hero__content > p {
+    font-size: var(--size-xxs);
+    font-weight: 500;
+}
+
+.hero__btn-wrapper {
+    position: relative;
+    width: 8em;
+}
+
+.hero__btn {
+    position: relative;
+
+    cursor: pointer;
+    font-weight: 600;
+    font-size: var(--size-xxs);
+    width: 7em;
+    background-image: url("../img/button.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.3em;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+/* s  */
+@media (min-width: 640px) {
+    .hero__content {
+        gap: 1em;
+    }
+    .hero__content > h4 {
+        font-size: var(--size-xs);
+    }
+
+    .hero__content > h2 {
+        font-size: var(--size-sm);
+    }
+
+    .hero__content > h1 {
+        font-size: var(--size-base);
+    }
+    .hero__content > p {
+        font-size: var(--size-xs);
+    }
+
+    .hero__btn {
+        font-size: var(--size-xs);
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .hero__content > h4 {
+        font-size: var(--size-sm);
+    }
+
+    .hero__content > h2 {
+        font-size: var(--size-base);
+    }
+
+    .hero__content > h1 {
+        font-size: var(--size-lg);
+    }
+    .hero__content > p {
+        font-size: var(--size-sm);
+    }
+
+    .hero__btn {
+        font-size: var(--size-sm);
+    }
+}
+/* l */
+@media (min-width: 1024px) {
+    .hero__content {
+        gap: 1.5em;
+    }
+    .hero__content > h4 {
+        font-size: var(--size-xl);
+    }
+
+    .hero__content > h2 {
+        font-size: var(--size-3xl);
+    }
+
+    .hero__content > h1 {
+        font-size: var(--size-4xl);
+    }
+    .hero__content > p {
+        font-size: var(--size-base);
+    }
+
+    .hero__btn {
+        font-size: var(--size-xl);
+    }
+}
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+/* 2xl */
+@media (min-width: 1536px) {
+    .hero__content {
+        gap: 1.5em;
+    }
+    .hero__content > h4 {
+        font-size: var(--size-2xl);
+    }
+
+    .hero__content > h2 {
+        font-size: var(--size-4xl);
+    }
+
+    .hero__content > h1 {
+        font-size: var(--size-5xl);
+    }
+    .hero__content > p {
+        font-size: var(--size-lg);
+    }
+
+    .hero__btn {
+        font-size: var(--size-2xl);
+    }
+}

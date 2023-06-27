@@ -1,9 +1,16 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
-const appRouter = createRouter({});
+const appRouter = createBrowserRouter([{}]);
 
 function App() {
-    return <BrowserRouter></BrowserRouter>;
+    return (
+        <BrowserRouter>
+            <Header />
+            <Hero />
+        </BrowserRouter>
+    );
 }
 
 export default App;

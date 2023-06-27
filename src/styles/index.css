@@ -1,7 +1,8 @@
 :root {
-    --clr-light: rgb(251, 251, 251);
-    --clr-dark: rgb(22, 26, 51);
+    --clr-dark: rgb(251, 251, 251);
+    --clr-light: rgb(22, 26, 51);
     --clr-red: rgb(214, 0, 28);
+    --clr-indigo: #7f50ff;
     --clr-slate400: #94a3b8;
     --clr-slate600: #475569;
     --clr-slate800: #1e293b;
@@ -42,12 +43,22 @@ picture,
 video,
 canvas,
 svg {
+    display: block;
     max-width: 100%;
     user-select: none;
 }
 
 a {
-    color: var(--clr-red);
+    color: var(--clr-light);
+}
+
+button {
+    display: inline;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
 }
 
 strong {
