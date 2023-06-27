@@ -15,23 +15,23 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.5em;
-    font-size: var(--size-xs);
-}
-
-.hero__content > h4 {
     font-size: var(--size-xxs);
 }
 
+.hero__content > h4 {
+    font-size: var(--size-3xs);
+}
+
 .hero__content > h2 {
-    font-size: var(--size-xs);
+    font-size: var(--size-xxs);
 }
 
 .hero__content > h1 {
     color: var(--clr-indigo);
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
 }
 .hero__content > p {
-    font-size: var(--size-xxs);
+    font-size: var(--size-3xs);
     font-weight: 500;
 }
 
@@ -42,21 +42,42 @@
 
 .hero__btn {
     position: relative;
-
     cursor: pointer;
     font-weight: 600;
-    font-size: var(--size-xxs);
+    font-size: var(--size-3xs);
     width: 7em;
     background-image: url("../img/button.png");
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 0.3em;
     padding: 0.3em;
 }
 
 /* xs */
-/* @media (min-width: 475px) {
-} */
+@media (min-width: 475px) {
+    .hero__content {
+        gap: 0.8em;
+    }
+    .hero__content > h4 {
+        font-size: var(--size-xxs);
+    }
+
+    .hero__content > h2 {
+        font-size: var(--size-xs);
+    }
+
+    .hero__content > h1 {
+        font-size: var(--size-sm);
+    }
+    .hero__content > p {
+        font-size: var(--size-xxs);
+    }
+
+    .hero__btn {
+        font-size: var(--size-xxs);
+    }
+}
 /* s  */
 @media (min-width: 640px) {
     .hero__content {
